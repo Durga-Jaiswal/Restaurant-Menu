@@ -13,8 +13,8 @@ function Menu({items}) {
        {items.map((menuItem)=>{
           const {id, title, img, price, desc, category} = menuItem;
           return (
-            <article key={id} className='menu-item'>
-              <img src={`https://restaurant-menu-theta-seven.vercel.app/${img}`} alt={title} className='img'/>
+            <article key={id} className='menu-item'>              <img src={img} alt={title} className='img'/>
+
               <div className='item-info'>
                 <div className='flex'>
                   <h3>{title}</h3>
